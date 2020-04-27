@@ -4,3 +4,7 @@ spec:
   components:
     sidecarInjector:
       enabled: true
+
+  values:
+    sidecarInjectorWebhook:
+      enableNamespacesByDefault: true
