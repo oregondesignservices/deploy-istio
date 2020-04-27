@@ -1,0 +1,9 @@
+# ref: https://istio.io/docs/tasks/traffic-management/ingress/secure-ingress-sds/
+apiVersion: install.istio.io/v1alpha1
+kind: IstioOperator
+spec:
+  values:
+    gateways:
+      istio-ingressgateway:
+        sds:
+          enabled: false
